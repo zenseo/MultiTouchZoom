@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=400">
+    <title>Multi-Touch Zoom Demo</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.multitouchzoom.js"></script>
+</head>
+<body>
+    <div id="test" style="width:400px;height:400px;background-color:#CCCCFF;margin:auto;"></div>
+    <script>
+        $(document).ready(function () {
+            $("#test").multitouchzoom({
+                zoomIn: function () {
+                    alert("zoomIn ");
+                },
+                zoomOut: function () {
+                    alert("zoomOut ");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
